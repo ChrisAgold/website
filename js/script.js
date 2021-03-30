@@ -11,7 +11,7 @@ $(document).ready(function () {
 
 // Typed JS
 var typed = new Typed(".typed", {
-    strings: ["Web Developer.", "Full Stack.", "Student."],
+    strings: ["Web Developer.", "Full Stack.", "Always Learning."],
     typeSpeed: 70,
     loop: true,
     startDelay: 1000,
