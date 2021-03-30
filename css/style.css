@@ -37,7 +37,6 @@ body {
 }
 
 /*Heading Name*/
-
 .titleMessage {
     position: absolute;
     width: 100%;
@@ -69,11 +68,11 @@ body {
 
 .aboutImage {
     max-width: 100%;
-
 }
 
 .skillsSection {
     /*background-color: #89FAF8*/
-    background-color: #7A04EB;
+    /*background-color: #7A04EB;*/
     color: #fff;
+    background-image: url("../img/cyber.jpg");
 }
