@@ -1,7 +1,7 @@
 body {
     font-size: 14px;
-    color: #D3D3D3;
-    background-color: #121212;
+    color: black;
+    background-color: white;
     letter-spacing: 1px;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .skillsSection {
-    background-color: black;
+    background-color: #551A8B;
     color: #D3D3D3;
 }
 
@@ -105,8 +105,18 @@ body {
     content: '%';
 }
 
+.squareItem {
+margin-top: 30px;
+    position: relative;
+}
 
-
+.squareInnerContainer {
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 2px solid #444;
+    border-top: none;
+}
 
 
 
