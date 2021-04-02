@@ -40,12 +40,12 @@ $(document).ready(function () {
 
     // scroll down pie chart animation
     var skillsTopOffset = $(".skillsSection").offset().top;
-
+    var statsTopOffset = $(".statsSection").offset().top;
+    var countUpFinished = false;
     $(window).scroll(function() {
-        // console how far you are from top (scroll position)
-        // console.log(window.pageYOffset)
+
         if(window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
-            // Easy-Pie-Chart
+
             $('.chart').easyPieChart({
                 easing: 'easeInOut',
                 barColor: '#fff',
@@ -54,9 +54,21 @@ $(document).ready(function () {
                 lineWidth: 4,
                 size: 152,
                 onStep: function(from, to, percent) {
-                    $(this.el).find('percent').text(Math.round(percent));
+                    $(this.el).find('.percent').text(Math.round(percent));
                 }
             });
         }
+
+        if(!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
+            $(".counter").each(function() {
+                var element = $(this);
+                var endVal = parseInt(element.text());
+
+                element.countup(endVal);
+            })
+
+            countUpFinished = true;
+        }
     });
+
 });
