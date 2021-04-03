@@ -178,7 +178,22 @@ body {
     background-color: #fff;
 }
 
+.filter a {
+    color: #9a4eae;
+    border: 1px solid #9a4eae;
+    padding: 10px 18px;
+    display: block;
+}
 
+.filter li {
+    display: inline-block;
+    padding: 5px;
+}
 
+.filter .current {
+    background-color: #9a4eae;
+    border-color: #9a4eae;
+    color: #fff;
+}
 
 
