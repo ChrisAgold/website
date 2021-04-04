@@ -70,5 +70,6 @@ $(document).ready(function () {
             countUpFinished = true;
         }
     });
-
+    // FancyBox
+    // $("[data-fancybox]").fancybox();
 });
