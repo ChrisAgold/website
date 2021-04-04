@@ -249,6 +249,12 @@ body {
     background-color: #9a4eae;
     position: relative;
     display: inline-block;
+    /*Transitions for each browser*/
+    -webkit-transition: all 0.2s linear 0.2s;
+    -moz-transition: all 0.2s linear 0.2s;
+    -o-transition: all 0.2s linear 0.2s;
+    -ms-transition: all 0.2s linear 0.2s;
+    -transition: all 0.2s linear 0.2s;
 }
 
 .items .imageOverlay {
@@ -260,16 +266,35 @@ body {
     top: 0px;
     opacity: 0;
     /*Transitions for each browser*/
-    -webkit-transition: all 0.2s linear 0.6s;
-    -moz-transition: all 0.2s linear 0.6s;
-    -o-transition: all 0.2s linear 0.6s;
-    -ms-transition: all 0.2s linear 0.6s;
-    -transition: all 0.2s linear 0.6s;
+    -webkit-transition: all 0.2s linear 0.4s;
+    -moz-transition: all 0.2s linear 0.4s;
+    -o-transition: all 0.2s linear 0.4s;
+    -ms-transition: all 0.2s linear 0.4s;
+    -transition: all 0.2s linear 0.4s;
 }
 
 /*Hover Overlay on portfolio images*/
 .items .item:hover .imageOverlay {
     opacity: 1;
+}
+
+/*Make icon appear when hover picture*/
+.items .openButton {
+    float: left;
+    left: -200px;
+}
+
+.items .projectLink {
+    float: right;
+    right: -200px;
+}
+
+.items .item:hover .openButton {
+    left: 0px;
+}
+
+.items .item:hover .projectLink {
+    right: 0px;
 }
 
 
